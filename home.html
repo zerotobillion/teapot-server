@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teapot Server</title>
+</head>
+
+<style>
+    .container {
+        background-color: #f4f5f7;
+        border-radius: 5px;
+
+        padding: 10px;
+        margin: 1% 5%;
+
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    }
+
+    .code-format {
+        background-color: white;
+        color: darkred;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <p>
+            In order to apply, we need to ask you to demonstrate your actual skills and resourcefulness rather than a document outlining a job history.
+            Therefore, please complete the task described below.
+        </p>
+
+        <p>
+            Please <strong>brew a tea</strong> using this server according to
+            <strong>HTCPCP-TEA</strong> (refer to <a href="https://tools.ietf.org/html/rfc7168">RFC-7168</a>).
+            The protocol is a bit modified.
+        </p>
+
+        <h4>Instructions:</h4>
+        <p>
+            <ol>
+                <li>
+                    Find a special <strong>tea variant</strong>, which has additional <strong>traffic requirement</strong>
+                    to be brewed
+                    (it will return HTTP code <strong>424</strong> when you will try to <strong>start to brew</strong> it).
+                </li>
+                <li>
+                    Successfully start to brew a special variant of tea, fulfilling the traffic requirements.
+                </li>
+                <li>
+                    Stop started brewing and <strong>provide your email</strong> address while stopping,
+                    using <span class="code-format">Email</span> header (our recruitment team will get notified about your application).
+                </li>
+            </ol>
+        </p>
+
+        <h4>Hints:</h4>
+        <p>
+            <ul>
+                <li>
+                    Traffic is measured separately for each second, tea variant and IP address
+                </li>
+                <li>
+                    Search for example implementations of protocol to find out how to use it
+                </li>
+            </ul>
+        </p>
+    </div>
+
+</body>
+</html>

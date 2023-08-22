@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  server:
+    build: .
+    env_file:
+      - .env
+    command: >
+      sh -c "pipenv run python server.py --host 0.0.0.0 --port 80 --worker-num 10"
+    ports:
+      - "80:80"
